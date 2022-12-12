@@ -28,4 +28,9 @@ void main() {
     expect(leap.isleapYear(2600), false);
     expect(leap.isleapYear(2200), false);
   });
+
+  test('scrabble score', () {
+    var r = ReverseStr();
+    expect(r.scrabbleScore('cabbage'), 14);
+  });
 }
