@@ -8,4 +8,10 @@ void main() {
     expect(T.twoFer('black'), 'one for black one for me');
     expect(T.twoFer(''), 'one for you one for me');
   });
+
+  test('test Resistor color duo', () {
+    var T = Resistor();
+    expect(T.getResitorsVal('white'), 9);
+    expect(T.getResitorsVal('black-white'), 9);
+  });
 }
