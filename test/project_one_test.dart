@@ -20,4 +20,12 @@ void main() {
     var T = ReverseStr();
     expect(T.reverstring('cool'), 'looc');
   });
+
+  test("Leap year test", () {
+// check the leap year list in goolge and check
+    var leap = ReverseStr();
+    expect(leap.isleapYear(2000), true);
+    expect(leap.isleapYear(2600), false);
+    expect(leap.isleapYear(2200), false);
+  });
 }
