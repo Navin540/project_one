@@ -1,4 +1,5 @@
 import 'package:project_one/resistor.dart';
+import 'package:project_one/reverse_string.dart';
 import 'package:project_one/two_for_one.dart';
 import 'package:test/test.dart';
 
@@ -13,5 +14,10 @@ void main() {
     var T = Resistor();
     expect(T.getResitorsVal('white'), 9);
     expect(T.getResitorsVal('black-white'), 9);
+  });
+
+  test('reverse string', () {
+    var T = ReverseStr();
+    expect(T.reverstring('cool'), 'looc');
   });
 }
