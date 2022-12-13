@@ -28,11 +28,6 @@ class ReverseStr {
     };
 
 //before you need to learn map and fold firstwhere function indivual. refer notes
-<<<<<<< HEAD
-
-=======
-    String word = 'cabbage';
->>>>>>> 2e604490b35ea5b18e2f667a43017b34aef7e9ec
     var res = word
         .toUpperCase()
         .split('')
