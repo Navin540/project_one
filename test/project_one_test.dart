@@ -39,4 +39,10 @@ void main() {
     expect(r.armStrongNumber(153), 'armstrong number');
     expect(r.armStrongNumber(154), 'not armstrong number');
   });
+
+  test('isogram', () {
+    var r = ReverseStr();
+    expect(r.isogram('abca'), 'not isogram');
+    expect(r.isogram('abc'), 'isogram');
+  });
 }

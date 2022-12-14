@@ -50,4 +50,16 @@ class ReverseStr {
     }
     return 'not armstrong number';
   }
+
+  String isogram(String word) {
+    //don't consider space, hifen, plus , asterics
+    String sen = word.replaceAll(RegExp('[ -+*]'), '');
+    int lenOfCovertedString = sen.split('').toSet().join().length;
+
+    if (lenOfCovertedString == sen.length) {
+      return 'isogram';
+    } else {
+      return 'not isogram';
+    }
+  }
 }
