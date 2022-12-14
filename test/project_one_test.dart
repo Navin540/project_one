@@ -45,4 +45,10 @@ void main() {
     expect(r.isogram('abca'), 'not isogram');
     expect(r.isogram('abc'), 'isogram');
   });
+
+  test('Difference of square', () {
+    var r = ReverseStr();
+    expect(r.diffOfSquare(10), 'Difference of squares : 2640');
+    expect(r.diffOfSquare(5), 'Difference of squares : 170');
+  });
 }

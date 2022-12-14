@@ -62,4 +62,13 @@ class ReverseStr {
       return 'not isogram';
     }
   }
+
+  String diffOfSquare(int n) {
+    var lis = List.generate(n, (i) => i + 1);
+
+    var sqOfNnaturalno = pow(n * (n + 1) / 2, 2);
+    var sum = lis.map((e) => pow(e, 2)).reduce((a, b) => a + b);
+
+    return 'Difference of squares : ${(sqOfNnaturalno - sum).round()}';
+  }
 }
