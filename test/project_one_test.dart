@@ -33,4 +33,10 @@ void main() {
     var r = ReverseStr();
     expect(r.scrabbleScore('cabbage'), 14);
   });
+
+  test(' Arm Strong Number', () {
+    var r = ReverseStr();
+    expect(r.armStrongNumber(153), 'armstrong number');
+    expect(r.armStrongNumber(154), 'not armstrong number');
+  });
 }

@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class ReverseStr {
   String reverstring(String word) {
     return word.split('').reversed.join('');
@@ -34,5 +36,18 @@ class ReverseStr {
         .map((c) => scores.entries.firstWhere((e) => e.key.contains(c)).value)
         .fold(0, (p, v) => p + v);
     return res;
+  }
+
+  String armStrongNumber(int num) {
+    String sn = num.toString();
+    var res = sn
+        .split('')
+        .map((e) => pow(int.parse(e), sn.length))
+        .reduce((a, b) => a + b);
+
+    if (int.parse(sn) == res) {
+      return 'armstrong number';
+    }
+    return 'not armstrong number';
   }
 }

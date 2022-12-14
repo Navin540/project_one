@@ -8,7 +8,7 @@
             "name": "project_one",
             "request": "launch",
             "type": "dart",
-            "program": "bin/project_one.dart",
+            "program": "bin/reverse_string.dart",
             "console": "terminal"
         }
     ]
